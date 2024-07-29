@@ -106,8 +106,8 @@ Resources:
       Handler: app.lambda_handler
       Role: !GetAtt InferenceLambdaFunctionServiceRole.Arn
       Handler: app.lambda_handler
-      Runtime: python3.7
-      ReservedConcurrentExecutions: 10
+      Runtime: python3.9
+    #  ReservedConcurrentExecutions: 10
       Timeout: 900 # 15 minutes
     DependsOn:
       - InferenceLambdaFunctionServiceRolePolicy
